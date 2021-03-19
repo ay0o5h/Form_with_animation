@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* video style */
+.myVideo{
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* div & table style */
+.main{
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: -7px -7px 20px 0 rgba(255,255,255,0.7),
+    7px 7px 20px 0 rgba(0,0,0,0.5);
+    padding: 3%;
+    animation: animt 3s linear;
+    border-radius: .375rem;
+}
+tr,td {
+    padding: 3%;
+}
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+    font-family:cursive;
+    font-weight:bold;
+    text-align: center;
+}
+.fa-user,
+.fa-lock,
+.fa-phone{
+        position: relative;
+        bottom: 22px;
+        left: 150px;
+        color: rgba(0,0,0,0.5);
+}
+label  {
+    font-size: .85rem;
+    font-family:cursive;
+   font-weight:bold;
+   text-transform: capitalize;
+}
+.inputField{
+    display: block;
+    margin-top: 10px;
+    border:0;
+    outline: 0;
+    padding: 5%;
+    background-color: transparent;
+    border-radius: .375rem;
+    box-shadow:inset -7px -7px 20px 0 rgba(255,255,255,0.3),
+    inset 7px 7px 20px 0 rgba(0,0,0,0.2);
+    width: 100%;
+}
+.inputField::placeholder, option{
+    font-size: .85rem;
+    font-family:cursive;
+    text-transform: capitalize;
+}
+.inputField:focus::placeholder {
+    color: transparent;
+  }
+
+button {
+    cursor: pointer;
+    font-size: .85rem;
+    font-family:cursive;
+   font-weight:bold;
+   text-transform: capitalize;
+   background-color: transparent;
+   border-radius: .375rem;
+    border:0;
+    outline: 0;
+    width: 100%;
+    box-shadow: -7px -7px 20px 0 rgba(255,255,255,0.7),
+    7px 7px 20px 0 rgba(0,0,0,0.5);
+    padding: 3%;
+    margin-top: 10px;
+}
+button:hover {
+    box-shadow:inset -7px -7px 20px 0 rgba(255,255,255,0.7),
+    inset 7px 7px 20px 0 rgba(0,0,0,0.2);
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+img {
+    box-shadow: -7px -7px 20px 0 rgba(255,255,255,0.7),
+    7px 7px 20px 0 rgba(0,0,0,0.5);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+    height:30px;
+     width:30px;
+     cursor: pointer;
+}
+img:hover {
+    box-shadow:inset -7px -7px 20px 0 rgba(255,255,255,0.7),
+    inset 7px 7px 20px 0 rgba(0,0,0,0.2);
+}
+/* @keyframes animt {
+    from {
+        top:0;
+        left: 0;
+    }
+    to {
+        top:20%;
+        left: 27%;
+    }
+} */
+@media (min-width: 992px) { 
+    @keyframes animt {
+        from {
+            top:0;
+            left: 0;
+        }
+        to {
+            top:50%;
+            left: 50%;
+        }
+    }
+    } 
+
+        
